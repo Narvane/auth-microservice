@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth-microservices-discovery" />
+        <module name="auth-microservices-resource" />
+        <module name="auth-microservices-gateway" />
+        <module name="auth-microservices" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-microservices" target="1.5" />
+      <module name="auth-microservices-discovery" target="17" />
+      <module name="auth-microservices-gateway" target="17" />
+      <module name="auth-microservices-resource" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-microservices-discovery" options="-parameters" />
+      <module name="auth-microservices-gateway" options="-parameters" />
+      <module name="auth-microservices-resource" options="-parameters" />
+    </option>
+  </component>
+</project>
